@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Grocery Housekeeping</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.3/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-green-600 text-white shadow-md py-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">Smart Grocery Housekeeping</h1>
+      <nav class="space-x-4">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Pantry</a>
+        <a href="#" class="hover:underline">Shopping List</a>
+        <a href="#" class="hover:underline">Settings</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Dashboard -->
+  <main class="max-w-6xl mx-auto mt-8 px-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <!-- Box 1: Items About to Expire -->
+    <section class="bg-white shadow-lg rounded-2xl p-6">
+      <h2 class="text-xl font-semibold mb-4 text-green-700">Items About to Expire</h2>
+      <ul class="space-y-2">
+        <li class="flex justify-between border-b pb-1">
+          <span>Milk</span>
+          <span class="text-red-500">Expires in 1 day</span>
+        </li>
+        <li class="flex justify-between border-b pb-1">
+          <span>Yogurt</span>
+          <span class="text-red-500">Expires in 2 days</span>
+        </li>
+        <li class="flex justify-between border-b pb-1">
+          <span>Spinach</span>
+          <span class="text-yellow-500">Expires in 3 days</span>
+        </li>
+      </ul>
+      <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+        View All
+      </button>
+    </section>
+
+    <!-- Box 2: Recently Bought Groceries -->
+    <section class="bg-white shadow-lg rounded-2xl p-6">
+      <h2 class="text-xl font-semibold mb-4 text-green-700">Recently Bought Groceries</h2>
+      <ul class="space-y-2">
+        <li class="flex justify-between border-b pb-1">
+          <span>Eggs (12ct)</span>
+          <span class="text-gray-500 text-sm">Bought 2 days ago</span>
+        </li>
+        <li class="flex justify-between border-b pb-1">
+          <span>Apples (5)</span>
+          <span class="text-gray-500 text-sm">Bought 3 days ago</span>
+        </li>
+        <li class="flex justify-between border-b pb-1">
+          <span>Bread (Whole Wheat)</span>
+          <span class="text-gray-500 text-sm">Bought 4 days ago</span>
+        </li>
+      </ul>
+      <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+        View All
+      </button>
+    </section>
+
+    <!-- Box 3: Pantry Summary -->
+    <section class="bg-green-50 shadow-lg rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-green-300">
+      <h2 class="text-2xl font-semibold mb-3 text-green-700">Check Your Pantry</h2>
+      <p class="text-gray-700 mb-4">Review what’s currently in stock and avoid duplicate purchases.</p>
+      <button class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700">
+        Go to Pantry
+      </button>
+    </section>
+
+    <!-- Box 4: Upcoming Restocks -->
+    <section class="bg-white shadow-lg rounded-2xl p-6">
+      <h2 class="text-xl font-semibold mb-4 text-green-700">Upcoming Restocks</h2>
+      <ul class="space-y-2">
+        <li class="flex justify-between border-b pb-1">
+          <span>Rice (10lb bag)</span>
+          <span class="text-gray-500 text-sm">Restocked 1 day ago</span>
+        </li>
+        <li class="flex justify-between border-b pb-1">
+          <span>Olive Oil</span>
+          <span class="text-gray-500 text-sm">Restocked 3 days ago</span>
+        </li>
+        <li class="flex justify-between border-b pb-1">
+          <span>Toilet Paper</span>
+          <span class="text-gray-500 text-sm">Restocked 5 days ago</span>
+        </li>
+      </ul>
+      <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+        View All
+      </button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-12 bg-gray-200 py-4">
+    <div class="max-w-6xl mx-auto text-center text-gray-600 text-sm">
+      © 2025 Smart Grocery Housekeeping
+    </div>
+  </footer>
+</body>
+</html>
